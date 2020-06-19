@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/* CSS document */
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	font-family: sans-serif;
+	margin: auto;
+	background: #818181;
+	color: white;
+	background-image: -webkit-gradient(
+        linear,
+        left top,
+        right bottom,
+        color-stop(0.25, #4f4f4f),
+        color-stop(0.5, #5f5f5f),
+        color-stop(0.75, #4f4f4f),
+        color-stop(1.00, #3f3f3f)
+    );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* #363636 */
+
+div.middle-row {
+	width: 100%;
+	margin-top: 100px;
+}
+
+div.project-box {
+	display: flex;
+	width: 100%;
+}
+
+div.project-box div {
+	padding: 10px;
+	width: calc(50% - 20px);
+}
+
+div.project-description {
+}
+
+div.project-skills {
+
+}
+
+ul.skill-list {
+	margin: 0;
+}
+
+div.link {
+	width: calc(100% - 20px);
+	background-color: white;
+	color: #333;
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+	transition: all 400ms ease;
+}
+
+div.dead-link {
+	width: calc(100% - 20px);
+	background-color: white;
+	color: #333;
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+}
+
+div.link:hover > i.right {
+	border: solid white;
+	border-width: 0 2px 2px 0;
+}
+
+div.link i {
+	border: solid #333;
+    border-width: 0 2px 2px 0;
+    transition: all 400ms ease;
+}
+
+div.link:hover {
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+}
+
+ul.skill-list li {
+	margin: 10px;
+	font-weight: bold;
+	font-size: 18pt;
+}
+
+div.project-window {
+	margin: auto;
+	width: calc(100% - 40px);
+	padding: 20px;
+	max-width: 600px;
+	background-color: rgba(48,48,48,0.85);
+}
+
+div.project-window h2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.line {
+	width: 100%;
+	border: 1px solid white;
+}
+
+div.bottomRow {
+	position: fixed;
+	bottom: 0;
+	width:100%;
+	text-align: bottom;
+	font-size: 8pt;
+	background-color: black;
+}
+/* arrows */
+
+i {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+@media screen and (max-width: 600px) {
+	div.project-box {
+		display: block;
+	}
+
+	div.project-box div.project-description {
+		width: 100%;
+	}
+
+	div.project-box div.project-skills {
+		width: 100%;
+	}
+}

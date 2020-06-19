@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/downloadPagina.css">
+<head>
+	<title> Samenvattingen </title>
+	<LINK REL="SHORTCUT ICON" HREF="../IMG/Logo.ico">
+</head>
+
+<script>
+	var windowName = "samenvattingen";
+</script>
+
+<body>
+
+	<script>
+		function makeLink(folder) {
+			buffer = "./downloadPagina.php?";
+			buffer = buffer + "folder=" + folder;
+			window.location.href = buffer;
+		}
+
+	</script>
+
+	<?php include('../Header/header.html'); ?>
+
+	<div class="middle-row">
+		<ul class="item-list">
+			<li onclick="location.href='google.com'">
+				<div class="flex-box">
+					<div class="item-name">Opdracht 1 adsasdf asdf </div>
+					<div class="item-type">PDF</div>
+					<div class="item-year">2017/2018</div>
+				</div>
+				<div class="download-button">Click to download</div>
+				<div class="line"></div>
+			</li>
+			<li>
+				<div class="flex-box">
+					<div class="item-name">Opdracht 1</div>
+					<div class="item-type">PDF</div>
+					<div class="item-year">2017/2018</div>
+				</div>
+				<div class="download-button">Click to download</div>
+				<div class="line"></div>
+			</li>			
+			<li>
+				<div class="flex-box">
+					<div class="item-name">Opdracht 1</div>
+					<div class="item-type">PDF</div>
+					<div class="item-year">2017/2018</div>
+				</div>
+				<div class="download-button">Click to download</div>
+				<div class="line"></div>
+			</li>
+		</ul>
+	</div>
+	<div class = "bottomRow">
+		This webpage was created by KiOui
+	</div>
+</body>
+
+</html>

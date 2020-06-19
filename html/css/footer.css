@@ -1,0 +1,7 @@
+div.bottomRow {
+	position: fixed;
+	bottom: 0;
+	width:100%;
+	text-align: bottom;
+	font-size: 8pt;
+}

@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* CSS document */
+
+div.nav-bar {
+	width: 100%;
+	margin: 0px;
+	font-family: sans-serif;
+	color: white;
+    top: 0;
+}
+
+ul.header-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.header-list li {
+    float: left;
+}
+
+ul.header-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+ul.header-list li a:hover {
+    background-color: #111;
+}

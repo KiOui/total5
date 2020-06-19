@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<link rel="stylesheet" type="text/css" href="./css/projectPagina-new.css">
+<link rel="stylesheet" type="text/css" href="../css/header.css">
+<head>
+	<title>
+		<?php
+
+			$folder = $_GET['folder'];
+
+			$folder = preg_replace("/[^a-zA-Z0-9]+/", "", $folder);
+
+			$course = "";
+			$year = "";
+
+			if (is_dir('./'.$folder)) {
+				$fh = fopen('./'.$folder.'/project.v', 'r');
+				$course = fgets($fh);
+				$year = fgets($fh);
+				fclose($fh);
+			}
+			else {
+				$course = "null";
+				$year = "null";
+			}
+
+			echo($course);
+
+		?>
+	</title>
+	<LINK REL="SHORTCUT ICON" HREF="../IMG/Logo.ico">
+</head>
+<body>
+
+	<script>
+		function makeLink(buffer) {
+			window.location.href = buffer;
+		}
+
+	</script>
+	
+	<div class='nav-bar'>
+		<ul class="header-list">
+		  <li><a href="./projecten.php"><i class="arrow left"></i>Back</a></li>
+		</ul>
+	</div>
+	
+	<div class="middle-row">
+		<div class="project-window">
+			<h2>Eco BoardCompany</h2>
+			<div class="line"></div>
+			<div class="project-box">
+				<div class="project-description">
+					Dit is een projectbeschrijving die veel inhoud heeft.
+				</div>
+				<div class="project-skills">
+					<ul class="skill-list">
+						<li>PHP</li>
+						<li>CSS</li>
+					</ul>
+				</div>
+			</div>
+			<div class="link" onclick="window.location.href='http://ecoboardcompany.com/'">llink</div>
+		</div>
+	</div>
+
+	<div class = "bottomRow">
+		This webpage was created by KiOui.
+
+		<?php
+			echo(' '.$course.' '.$year.'.');
+		?>
+	</div>
+
+</body>
+
+</html>
+

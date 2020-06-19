@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/* CSS document */
+
+body {
+	min-height: 100%;
+}
+
+div.wrapper {
+	display: block;
+}
+
+div.contentDiv {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+div.rightDiv {
+	width: calc(100% - 200px);
+	height: 100%;
+	float: right;
+	min-height: 200px;
+}
+
+div.divPlayer {
+	font-weight: bold;
+	background-color: black;
+	width: 100%;
+	display: inline-block;
+	float: left;
+	background-image: -webkit-gradient(
+        linear,
+        left top,
+        right bottom,
+        color-stop(0.25, #262626),
+        color-stop(0.5, #1a1a1a),
+        color-stop(0.75, #0d0d0d),
+        color-stop(1.00, #000000)
+    );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img.playerImage {
+	position: relative;
+	float: left;
+	height: 200px;
+	width: 200px;
+}
+
+div.playerChampion {
+	text-align: left;
+	height: 100%;
+	position: relative;
+	float: left;
+	font-size: 26pt;
+	font-family: sans-serif;
+	width: 20%;
+	min-width: 200px;
+}
+
+div.playerChampion div {
+	height: 80px;
+	padding: 10px;
+	width: 200px;
+}
+
+div.playerItems {
+	height: 100%;
+	position: relative;
+	float: left;
+	width: 15%;
+	min-width: 400px;
+	font-size: 16pt;
+}
+
+div.playerItems div {
+	height: calc(100% - 20px);
+	padding: 10px;
+}
+
+div.playerSpells {
+	height: 100%;
+	position: relative;
+	float: left;
+	text-align: left;
+	font-size: 26pt;
+	width: 20%;
+	min-width: 200px;
+}
+
+div.playerSpells div {
+	height: 80px;
+	padding: 10px;
+}
+
+div.bottomRow {
+	visibility: hidden;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	background-color: #818181;
+	opacity: 0.95;
+	padding-top: 10px;
+	min-height: 130px;
+}
+
+div.buttonDiv {
+	text-align: center;
+}
+
+div.createdBy {
+	position: fixed;
+	bottom: 0;
+	width:100%;
+	text-align: bottom;
+	font-size: 8pt;
+}
+
+a.download {
+	text-decoration: none;
+	color: black;
+	background-color: white;
+}
+
+a.download:hover {
+	color: white;
+	background-color: black;
+}

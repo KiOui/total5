@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110459600-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110459600-1');
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../css/header.css">
+<div class='nav-bar' id="nav">
+	<ul class="header-list">
+	  <li id="index"><a href="/index.php">Home</a></li>
+	  <li id="uitwerkingen"><a href="/Uitwerkingen/uitwerkingen.php">Exercise answers</a></li>
+	  <li id="samenvattingen"><a href="/Samenvattingen/samenvattingen.php">Recaps</a></li>
+	  <li id="projecten"><a href="/Projecten/projecten.php">Projects</a></li>
+	  <!--<li><a href="/index.php">The site is currently being modified.</a></li>-->
+	  <li><a href="http://gitlab.total5.nl/">GitLab</a></li>
+	</ul>
+</div>
+
+<script>
+	window.onload = currentPage();
+
+	function currentPage() {
+		if (typeof windowName !== 'undefined') {
+			setCurrentPage(windowName);
+			if (windowName == 'randomchamp') {
+				init();
+			}
+		}
+
+	}
+
+	function setCurrentPage(windowName) {
+		document.getElementById(windowName).style.backgroundColor = "grey";
+	}
+</script>
